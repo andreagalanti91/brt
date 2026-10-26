@@ -1,0 +1,36 @@
+:root {
+  /* Superfici: nero puro come base, grafite per i riquadri (linguaggio Apple in dark mode) */
+  --black: #000;
+  --graphite: #161617;
+  --graphite-2: #1d1d1f;
+  --line: rgb(255 255 255 / 0.12);
+  --line-strong: rgb(255 255 255 / 0.22);
+
+  /* Testo */
+  --text: #f5f5f7;
+  --muted: #a1a1a6;
+  --faint: #6e6e73;
+
+  /* Colori del marchio BRT: il gradiente teal → blu del sito originale */
+  --teal: #00a6a8;
+  --teal-bright: #34d6d8;
+  --blue: #003b80;
+  --brand-gradient: linear-gradient(180deg, var(--teal) 0%, var(--blue) 100%);
+
+  --glass: rgb(22 22 23 / 0.62);
+  --glass-border: rgb(255 255 255 / 0.1);
+
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter Variable', 'Helvetica Neue', Arial, sans-serif;
+
+  --container: 1240px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --radius-lg: 32px;
+  --radius-md: 22px;
+  --radius-sm: 14px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --header-h: 72px;
+  color-scheme: dark;
+}
