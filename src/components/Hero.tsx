@@ -19,9 +19,11 @@ export function Hero({ t }: { t: Content }) {
           <defs>
             <mask id="brt-mask" maskUnits="userSpaceOnUse" x="-8000" y="-8000" width="17600" height="16900">
               <rect x="-8000" y="-8000" width="17600" height="16900" fill="#fff" />
-              <text x="800" y="640" textAnchor="middle" className="hero__mask-text">
-                BRT
-              </text>
+              <g data-glyphs="">
+                <text x="800" y="640" textAnchor="middle" className="hero__mask-text">
+                  BRT
+                </text>
+              </g>
             </mask>
           </defs>
           <rect x="-8000" y="-8000" width="17600" height="16900" fill="#000" mask="url(#brt-mask)" />

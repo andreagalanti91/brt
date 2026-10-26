@@ -22,7 +22,8 @@ export function Projects({ t }: { t: Content }) {
         scene.style.removeProperty('height')
         return
       }
-      const shift = Math.max(0, track.scrollWidth - window.innerWidth)
+      // clientWidth esclude la barra di scorrimento (presente su Windows), così l'ultima foto non resta tagliata
+      const shift = Math.max(0, track.scrollWidth - document.documentElement.clientWidth)
       scene.style.setProperty('--shift', String(shift))
       // La galleria scorre più veloce dello scroll verticale, così la sezione non risulta troppo lunga
       scene.style.height = `${shift * 0.6 + window.innerHeight}px`
